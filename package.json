@@ -1,0 +1,36 @@
+{
+  "name": "gitlab-static",
+  "version": "1.0.0",
+  "description": "gitlab-static",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "test": "mocha test"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@koa/router": "^8.0.5",
+    "koa": "^2.11.0",
+    "koa-body": "^4.1.1",
+    "koa-logger": "^3.2.1",
+    "koa-redis": "^4.0.0",
+    "node-cache": "^5.1.0",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "mocha": "^7.0.0",
+    "nodemon": "^2.0.3"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "node_modules/*",
+      "docs/*",
+      "logs/*"
+    ],
+    "delay": "2500",
+    "env": {
+      "ENV": "dev"
+    }
+  }
+}

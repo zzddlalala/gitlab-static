@@ -1,0 +1,1 @@
+module.exports = require(`../../env/config.${process.env.ENV || 'dev'}.js`);

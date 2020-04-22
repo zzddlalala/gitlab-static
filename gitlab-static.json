@@ -1,0 +1,18 @@
+{
+    "apps": [
+        {
+            "name": "gitlab-static",
+            "script": "app.js",
+            "watch": false,
+            "instances": 1,
+            "error_file": "logs/err.log",
+            "out_file": "logs/out.log",
+            "log_date_format": "YYYY-MM-DD HH:mm Z",
+            "env": {
+                "NODE_ENV": "production",
+                "ENV": "qa",
+                "PORT": "7020"
+            }
+        }
+    ]
+}
